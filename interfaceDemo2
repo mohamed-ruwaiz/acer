@@ -1,0 +1,35 @@
+interface Animal{
+	void food(String f);
+}
+class Lion implements Animal
+{@Override
+	public void food(String f) {
+		System.out.println("The lion eat : "+f);
+		}
+}
+class Cow implements Animal
+{@Override
+	public void food(String c) {
+		System.out.println("The Cow eat : "+c);
+		}
+}
+class Elephant implements Animal
+{@Override
+	public void food(String e) {
+		System.out.println("The elephant eat : "+e);
+		}
+}
+
+public class interfaceDemo2{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		    Lion o = new Lion();
+		    o.food("meat");
+		    Cow o1=new Cow();
+		    o1.food("vegatables");
+		    Elephant o2 =new Elephant();
+		    o2.food("sugarcane");
+		    }
+		}
